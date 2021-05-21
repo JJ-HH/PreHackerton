@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <!-- <div class="col-md-8">
+        <img src="{% static 'homepage/ss1.png' %}" alt="ss1" class="img-fluid">
+    </div>
+
+    <div class="col-md-8">
+        <blockquote class="blockquote">
+            <p>A well-known quote, contained in a blockquote element.</p>
+        </blockquote>
+
+        <figure class="figure">
+            <img src="{% static 'homepage/ss2.png' %}" class="figure-img img-fluid rounded" alt="ss2">
+            <figcaption class="figure-caption">A caption for the above image.</figcaption>
+        </figure>
+    </div> -->
+
+    <div class="col-md-8">
+        <p class="lead">응답자의 개발직군별 비율</p>       
+        <iframe src="{% static 'homepage/pie_dark.html' %}" width="1250" height="700" frameborder="0" framespacing="0" marginheight="0" marginwidth="0" scrolling="no" vspace="0"></iframe></p>
+    </div>
+    <div class="col-md-8">       
+        <p class="lead">언어별 평균 연봉</p>
+        <iframe src="{% static 'homepage/scatter_dark.html' %}" width="1250" height="700" frameborder="0" framespacing="0" marginheight="0" marginwidth="0" scrolling="no" vspace="0"></iframe></p>
+    </div>
+    <div class="col-md-8">    
+        <p class="lead">연도별 연봉 변화</p>   
+        <iframe src="{% static 'homepage/years_box.html' %}" width="1250" height="700" frameborder="0" framespacing="0" marginheight="0" marginwidth="0" scrolling="no" vspace="0"></iframe></p>
+    </div>
+    <div class="col-md-8">  
+        <p class="lead">연도별 밀도 추정</p>     
+        <iframe src="{% static 'homepage/years_kde.html' %}" width="1250" height="700" frameborder="0" framespacing="0" marginheight="0" marginwidth="0" scrolling="no" vspace="0"></iframe></p>
+    </div>
+
+{% endblock %}

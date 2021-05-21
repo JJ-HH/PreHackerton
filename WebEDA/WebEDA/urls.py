@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+import homepage.views as vw
+
 urlpatterns = [
+    path("", vw.IndexView.as_view(), name='base'),
     path('admin/', admin.site.urls),
 ]
